@@ -46,9 +46,9 @@ java -jar target/benchmarks.jar -f 2 -wi 3 -i 3 -bm thrpt
 ### Expected output
 
 ```
-Benchmark                      Mode  Cnt    Score   Error  Units
-Main.fillOutFixedList         thrpt    5  150.232          ops/s
-Main.fillOutRandomLengthList  thrpt    5   45.500          ops/s
+Benchmark                              Mode  Cnt    Score   Error  Units
+Main.fillOutFixedCapacityList         thrpt    5  150.232          ops/s
+Main.fillOutDefaultCapacityList       thrpt    5   45.500          ops/s
 ```
 
 ## Features

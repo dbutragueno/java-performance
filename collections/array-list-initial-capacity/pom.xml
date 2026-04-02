@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.performance.collections</groupId>
-    <artifactId>list</artifactId>
+    <artifactId>array-list-initial-capacity</artifactId>
     <version>v1.0.0</version>
 
     <properties>
