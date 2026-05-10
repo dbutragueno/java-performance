@@ -16,9 +16,9 @@
     </properties>
 
     <modules>
-        <module>jmh</module>
-        <module>collections/array-list-initial-capacity</module>
-        <module>collections/list-insert-begin</module>
+        <module>benchmarks/jmh</module>
+        <module>benchmarks/collections/array-list-initial-capacity</module>
+        <module>benchmarks/collections/list-insert-begin</module>
     </modules>
 
     <build>

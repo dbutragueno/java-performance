@@ -8,7 +8,7 @@
         <groupId>com.performance</groupId>
         <artifactId>java-performance-parent</artifactId>
         <version>v1.0.0</version>
-        <relativePath>../pom.xml</relativePath>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>jmh</artifactId>
