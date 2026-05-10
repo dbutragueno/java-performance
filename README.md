@@ -21,7 +21,7 @@ java-performance/
         └── list-insert-begin/
 ```
 
-The root POM defines a multi-module Maven project. The `benchmarks/jmh/` module centralizes JMH configuration (dependencies, shade plugin) so each leaf module only needs its benchmark code.
+The root POM defines a multi-module Maven project. The [`benchmarks/jmh/`](benchmarks/jmh/README.md) module centralizes JMH configuration (dependencies, shade plugin) so each leaf module only needs its benchmark code. See [`benchmarks/README.md`](benchmarks/README.md) for available benchmarks and usage.
 
 ## Available Benchmarks
 
@@ -44,13 +44,7 @@ cd java-performance
 
 # Build all modules
 mvn clean package
-
-# Run a specific benchmark (example: array-list-initial-capacity)
-cd benchmarks/collections/array-list-initial-capacity
-java -jar target/benchmarks.jar -f 1 -wi 1 -i 1
 ```
-
-Each benchmark module includes its own README with detailed usage instructions and expected output.
 
 ## Tech Stack
 
