@@ -30,11 +30,6 @@ The root POM defines a multi-module Maven project. The [`benchmarks/jmh/`](bench
 | `array-list-initial-capacity` | Compares `ArrayList` created with a predefined capacity vs. default capacity (1M elements) | Pre-allocating capacity avoids repeated internal array resizing and is significantly faster |
 | `list-insert-begin` | Compares `ArrayList.addFirst()` vs `LinkedList.addFirst()` inserting 1M elements at the head | `LinkedList` has O(1) head insertion, while `ArrayList` shifts the entire backing array — a massive difference at scale |
 
-## Prerequisites
-
-- **Java 25**
-- **Maven 3.9+**
-
 ## Getting Started
 
 ```bash
