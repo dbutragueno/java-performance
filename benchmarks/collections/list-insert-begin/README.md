@@ -1,7 +1,5 @@
 # List Insert at Beginning Benchmark
 
-##  Overview
-
 This benchmark compares `ArrayList.addFirst()` vs `LinkedList.addFirst()` when inserting 1M elements at the head of the list.
 
 ## Expected output

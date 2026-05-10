@@ -1,7 +1,5 @@
 # ArrayList Benchmark
 
-##  Overview
-
 This benchmark compares the performance of adding 1M elements to an `ArrayList` with a predefined initial capacity vs. the default capacity.
 
 ## Expected output
