@@ -29,17 +29,11 @@ public class Main {
     }
 
     @Benchmark
-    @Fork(value = 1, warmups = 1)
-    @Warmup(iterations = 1)
-    @BenchmarkMode({Mode.Throughput, Mode.AverageTime})
     public void insertBeginArrayList() {
         insetBegin(arrayList);
     }
 
     @Benchmark
-    @Fork(value = 1, warmups = 1)
-    @Warmup(iterations = 1)
-    @BenchmarkMode({Mode.Throughput, Mode.AverageTime})
     public void insertBeginLinkedList() {
         insetBegin(linkedList);
     }

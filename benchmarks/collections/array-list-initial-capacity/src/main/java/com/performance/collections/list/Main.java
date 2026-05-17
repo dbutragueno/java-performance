@@ -28,17 +28,11 @@ public class Main {
     }
 
     @Benchmark
-    @Fork(value = 1, warmups = 1)
-    @Warmup(iterations = 1)
-    @BenchmarkMode({Mode.Throughput, Mode.AverageTime})
     public void fillOutFixedCapacityList() {
         fillOutList(fixedCapacityList);
     }
 
     @Benchmark
-    @Fork(value = 1, warmups = 1)
-    @Warmup(iterations = 1)
-    @BenchmarkMode({Mode.Throughput, Mode.AverageTime})
     public void fillOutDefaultCapacityList() {
         fillOutList(defaultCapacityList);
     }
