@@ -18,7 +18,8 @@ java-performance/
     ├── jmh/
     └── collections/
         ├── array-list-initial-capacity/
-        └── list-insert-begin/
+        ├── list-insert-begin/
+        └── list-remove-begin/
 ```
 
 The root POM defines a multi-module Maven project. The [`benchmarks/jmh/`](benchmarks/jmh/README.md) module centralizes JMH configuration (dependencies, shade plugin) so each leaf module only needs its benchmark code. See [`benchmarks/README.md`](benchmarks/README.md) for available benchmarks and usage.
@@ -29,6 +30,7 @@ The root POM defines a multi-module Maven project. The [`benchmarks/jmh/`](bench
 |---|---|---|
 | `array-list-initial-capacity` | Compares `ArrayList` created with a predefined capacity vs. default capacity (1M elements) | Pre-allocating capacity avoids repeated internal array resizing and is significantly faster |
 | `list-insert-begin` | Compares `ArrayList.addFirst()` vs `LinkedList.addFirst()` inserting 1M elements at the head | `LinkedList` has O(1) head insertion, while `ArrayList` shifts the entire backing array — a massive difference at scale |
+| `list-remove-begin` | Compares `ArrayList.removeFirst()` vs `LinkedList.removeFirst()` removing 1M elements from the head | `LinkedList` has O(1) head removal, while `ArrayList` shifts the entire backing array — a massive difference at scale |
 
 ## Getting Started
 

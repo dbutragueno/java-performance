@@ -19,6 +19,7 @@
         <module>benchmarks/jmh</module>
         <module>benchmarks/collections/array-list-initial-capacity</module>
         <module>benchmarks/collections/list-insert-begin</module>
+        <module>benchmarks/collections/list-remove-begin</module>
     </modules>
 
     <build>
